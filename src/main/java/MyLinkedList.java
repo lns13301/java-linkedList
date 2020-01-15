@@ -4,9 +4,19 @@ import java.util.List;
 import java.util.ListIterator;
 
 public class MyLinkedList<String> implements List {
+    private int size;
+    private Node<String> head;
+    private Node<String> tail;
+
+    public MyLinkedList() {
+        this.size = 0;
+        this.head = null;
+        this.tail = null;
+    }
+
     @Override
     public int size() {
-        return 0;
+        return this.size;
     }
 
     @Override
