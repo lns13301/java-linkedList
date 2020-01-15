@@ -16,4 +16,8 @@ public class MyLinkedListTest {
     public void sizeTest() {
         assertThat(myLinkedList.size()).isEqualTo(0);
     }
+
+    @Test public void emptyTest() {
+        assertThat(myLinkedList.isEmpty()).isTrue();
+    }
 }
